@@ -12,7 +12,7 @@ function AuthPage() {
 
   const [phoneNumber, setPhoneNumber] = useState("09385818976");
   const [otp, setOtp] = useState("");
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
   const [time, setTime] = useState(RESEND_TIME);
   const router = useRouter();
   const {

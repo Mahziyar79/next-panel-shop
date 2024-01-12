@@ -60,7 +60,7 @@ function PaymentListTable({ payments }) {
                   {toLocalDateStringShort(payment.createdAt)}
                 </td>
                 <td className="table__td">
-                  {payment.status === "COMPLETED" ? (
+                  {payment?.status === "COMPLETED" ? (
                     <span className="badge badge--success">موفق</span>
                   ) : (
                     <span className="badge badge--error">ناموفق</span>
