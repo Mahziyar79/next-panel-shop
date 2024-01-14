@@ -109,16 +109,16 @@ function Header() {
                       variant="contained"
                       style={{
                         borderRadius: 24,
-                        padding: "10px 16px",
+                        padding: "10px 10px 10px 16px",
                         backgroundColor: "rgb(74, 109, 255)",
-                        fontFamily: "sans-serif",
+                        fontFamily: "inherit",
                         gap: "10px",
                         display: "flex",
                         alignItems: "center",
                       }}
                       startIcon={<LoginIcon className="rotate-180" />}
                     >
-                      <p className="-mt-[5px]">ورود</p>
+                      <p>ورود</p>
                     </Button>
                   </Link>
                 </li>
