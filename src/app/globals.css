@@ -65,6 +65,9 @@
     @apply bg-rose-600 text-white;
   }
 }
+.MuiTooltip-tooltip {
+  font-family: inherit;
+}
 
 html,
 body {
