@@ -10,7 +10,7 @@ export default function HeroSection() {
     <main className="flex-1">
       <Image
         src={heroBgSVG}
-        className="absolute z-[-1] left-0 top-0 hidden md:block"
+        className="absolute left-0 top-0 hidden md:block"
       />
       <section className="container md:max-w-screen-lg mx-auto mt-12 z-10">
         <div className="flex gap-y-9 flex-col-reverse items-center md:flex-row md:gap-x-5 md:items-center md:justify-between">
