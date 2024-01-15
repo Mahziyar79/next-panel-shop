@@ -21,18 +21,18 @@ export default function HeroSection() {
                 className="font-sans"
                 label="اتمام جشنواره تخفیف"
               />
-              <span class="text-primary-900 text-xs font-bold">
+              <span className="text-primary-900 text-xs font-bold">
                 &nbsp;ظرفیت تکمیل شد 😍&nbsp;
               </span>
             </div>
-            <h1 class="font-black text-2xl sm:text-[30px] md:text-[40px] lg:text-[50px] leading-relaxed text-secondary-900 mb-2 md:mb-5">
+            <h1 className="font-black text-2xl sm:text-[30px] md:text-[40px] lg:text-[50px] leading-relaxed text-secondary-900 mb-2 md:mb-5">
               برنامه نویسی را سریع <br /> و آسان یاد بگیرید
             </h1>
-            <p class="text-sm md:text-lg font-medium text-gray-400 mb-6 md:mb-2">
+            <p className="text-sm md:text-lg font-medium text-gray-400 mb-6 md:mb-2">
               ما کنارتون هستیم تا عمیق یاد بگیرید،
               <br />و با بهترین مسیر ممکن به مقصدتون برسید.
             </p>
-            <div class="max-w-screen-sm h-0.5 bg-[#898a9c33] mb-4 md:mb-7"></div>
+            <div className="max-w-screen-sm h-0.5 bg-[#898a9c33] mb-4 md:mb-7"></div>
             <Link href={"/products"}>
               <Button
                 variant="contained"
@@ -60,7 +60,7 @@ export default function HeroSection() {
           <div className="w-[80%] md:w-[45%] max-w-screen-sm relative">
             <Image src={banner} alt="Banner" width={"100vh"} />
             <div
-              class="absolute -bottom-0 w-full h-48 z-2"
+              className="absolute -bottom-0 w-full h-48 z-2"
               style={{
                 background:
                   "linear-gradient(rgba(255, 255, 255, 0) 37%, rgb(244, 245, 247) 93%)",
