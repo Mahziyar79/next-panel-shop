@@ -14,7 +14,7 @@ import "swiper/css";
 
 const ProductsCarousel = () => {
   const sliderItem = (
-    <div className="mt-12">
+    <div className="mt-12 pb-10">
       <div className="bg-white shadow-sm shadow-secondary-100/40 rounded-xl relative p-3 flex flex-col h-full hover:shadow-lg hover:shadow-secondary-100/40 transition-all duration-300 ease-in-out">
         <div className="-mt-14 mb-6">
           <div className="relative shadow-xl rounded-xl shadow-secondary-100/50">

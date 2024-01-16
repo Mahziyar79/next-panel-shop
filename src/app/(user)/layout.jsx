@@ -5,7 +5,7 @@ import Header from "../Header";
 import Providers from "../Providers";
 
 export const metadata = {
-  title: "Next Shop Panel",
+  title: "آموزش تخصصی برنامه نویسی وب",
   description: "Next.js Course Fronthooks Course",
 };
 
