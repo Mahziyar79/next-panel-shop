@@ -1,5 +1,5 @@
 import Image from "next/image";
-import descriptionBg from "../../assets/images/description-bg.svg";
+import descriptionBg from "../../assets/images/DescriptionSection/description-bg.svg";
 import reviewBg from "../../assets/images/review.svg";
 import LatestReviewsSlider from "./LatestReviewsSlider";
 

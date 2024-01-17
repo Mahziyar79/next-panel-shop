@@ -13,7 +13,7 @@ function CheckOTPForm({
   isCechkingOtp,
 }) {
   return (
-    <div>
+    <div className="mb-12">
       <button onClick={onBack} className="mb-4">
         <HiArrowNarrowRight className="w-6 h-6 text-secondary-500" />
       </button>

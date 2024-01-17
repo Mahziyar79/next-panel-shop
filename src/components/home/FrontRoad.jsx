@@ -26,7 +26,7 @@ const FrontRoad = () => {
           نقشه راه و مسیر یادگیری فرانت اند
         </Link>
       </div>
-      <div className="flex items-center overflow-x-auto justify-between flex-shrink-0 flex-nowrap gap-x-10 -mx-4 md:gap-x-0 px-4 snap-x md:px-10 md:-mx-0 py-8 md:py-10">
+      <div className="flex items-center overflow-x-auto justify-between flex-shrink-0 flex-nowrap gap-x-10 md:gap-x-0 px-4 snap-x md:px-10 md:-mx-0 py-8 md:py-10">
         <div className="flex flex-col items-center gap-y-3 snap-center hover:text-blue-600 transition-all duration-300 ease-in-out relative">
           <div className="w-20 h-20 md:w-24 md:h-24 relative flex items-center justify-center rounded-full shadow-xl shadow-gray-300/30 hover:shadow-primary-300/30">
             <Image

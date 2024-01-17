@@ -3,7 +3,7 @@ import TextField from "../../../common/TextField";
 
 function SendOTPFrom({ phoneNumber, onChange, onSubmit, isLoading }) {
   return (
-    <div>
+    <div className="mb-12">
       <form className="space-y-10" onSubmit={onSubmit}>
         <TextField
           label="شماره موبایل"

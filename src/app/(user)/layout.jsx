@@ -3,6 +3,7 @@ import vazirFont from "../../constants/localFonts";
 import "../globals.css";
 import Header from "../Header";
 import Providers from "../Providers";
+import Footer from "../Footer";
 
 export const metadata = {
   title: "آموزش تخصصی برنامه نویسی وب",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           <Toaster />
           <Header />
           <div className="container xl:max-w-screen-xl">{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

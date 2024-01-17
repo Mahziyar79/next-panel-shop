@@ -1,9 +1,9 @@
-import descriptionBg from "../../assets/images/description-bg.svg";
-import description1 from "../../assets/images/description1.svg";
-import description2 from "../../assets/images/description2.svg";
-import description3 from "../../assets/images/description3.svg";
-import description4 from "../../assets/images/description4.svg";
-import description5 from "../../assets/images/description5.svg";
+import descriptionBg from "../../assets/images/DescriptionSection/description-bg.svg";
+import description1 from "../../assets/images/DescriptionSection/description1.svg";
+import description2 from "../../assets/images/DescriptionSection/description2.svg";
+import description3 from "../../assets/images/DescriptionSection/description3.svg";
+import description4 from "../../assets/images/DescriptionSection/description4.svg";
+import description5 from "../../assets/images/DescriptionSection/description5.svg";
 import TooltipComponent from "../TooltipComponent";
 
 export default function DescriptionSection() {
