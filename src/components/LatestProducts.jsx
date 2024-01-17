@@ -8,7 +8,6 @@ import ProductsCarousel from "./ProductsCarousel";
 const LatestProducts = async () => {
   const productsPromise = getProducts();
   const [{ products }] = await Promise.all([productsPromise]);
-  console.log(products);
   return (
     <section className="container md:max-w-screen-xl mx-auto">
       <div className="rounded-xl p-3 md:p-8 bg-transparent latest-product">
@@ -47,7 +46,7 @@ const LatestProducts = async () => {
           </div>
           <div className="flex-1 overflow-x-hidden rounded-lg overflow-hidden">
             <div>
-              <ProductsCarousel />
+              <ProductsCarousel products={products} />
             </div>
           </div>
         </div>

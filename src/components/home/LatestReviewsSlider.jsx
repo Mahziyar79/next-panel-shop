@@ -58,7 +58,6 @@ const LatestReviewsSlider = () => {
     <Swiper
       slidesPerView={"2"}
       spaceBetween={30}
-      className="mySwiper"
       breakpoints={{
         320: {
           slidesPerView: 1,
