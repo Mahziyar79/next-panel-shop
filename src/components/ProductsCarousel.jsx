@@ -12,6 +12,7 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { toLocalDateStringShort } from "@/utils/toLocalDate";
+import { toPersianNumbers } from "@/utils/toPersianNumbers";
 
 const ProductsCarousel = ({ products }) => {
   return (
@@ -124,17 +125,17 @@ const ProductsCarousel = ({ products }) => {
                     {product?.price === product?.offPrice ? (
                       <div className="font-bold flex items-center">
                         <span class="text-secondary-800 font-black ml-2 md:text-xl">
-                          {product.price}
+                          {toPersianNumbers(product.price)}
                         </span>
                         <Image src={toman} alt="toman" width={22} />
                       </div>
                     ) : (
                       <div className="font-bold flex flex-col items-center">
                         <div class="text-secondary-300 text-sm line-through">
-                          {product?.offPrice}
+                          {toPersianNumbers(product?.offPrice)}
                         </div>
                         <span class="text-secondary-800 font-black ml-2 md:text-xl">
-                          {product.price}
+                          {toPersianNumbers(product.price)}
                         </span>
                         <Image src={toman} alt="toman" width={22} />
                       </div>

@@ -12,6 +12,7 @@ import {
   HomeOutlined,
   MenuOutlined,
   PersonOutline,
+  SentimentSatisfiedAltOutlined,
   ShoppingBagOutlined,
   ShoppingCartOutlined,
 } from "@mui/icons-material";
@@ -22,7 +23,6 @@ function Header() {
   const { data, isLoading } = useGetUser();
   const { user, cart } = data || {};
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
   return (
     <>
@@ -64,6 +64,12 @@ function Header() {
                   <Link className="block py-2" href="/products">
                     <ShoppingBagOutlined className="text-gray-400 ml-1" />
                     محصولات
+                  </Link>
+                </li>
+                <li>
+                  <Link className="block py-2" href="/about-me">
+                    <SentimentSatisfiedAltOutlined className="text-gray-400 ml-1" />
+                    درباره من
                   </Link>
                 </li>
               </ul>

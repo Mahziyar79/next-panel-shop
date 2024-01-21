@@ -5,6 +5,8 @@ import {
   Close,
   GroupAddOutlined,
   HomeOutlined,
+  PersonOutline,
+  SentimentSatisfiedAltOutlined,
   ShoppingBagOutlined,
 } from "@mui/icons-material";
 import Link from "next/link";
@@ -23,9 +25,26 @@ const MobileMenu = ({ open, close }) => {
       path: "/",
       icon: <HomeOutlined className="text-gray-500 ml-1" />,
     },
-    { title: "محصولات", path: "/products",icon: <ShoppingBagOutlined className="text-gray-500 ml-1" />, },
-    { title: "پنل کاربر", path: "/profile",icon: <GroupAddOutlined className="text-gray-500 ml-1" />, },
-    { title: "پنل ادمین", path: "/admin",icon: <HomeOutlined className="text-gray-500 ml-1" />, },
+    {
+      title: "محصولات",
+      path: "/products",
+      icon: <ShoppingBagOutlined className="text-gray-500 ml-1" />,
+    },
+    {
+      title: "درباره من",
+      path: "/about-me",
+      icon: <SentimentSatisfiedAltOutlined className="text-gray-500 ml-1" />,
+    },
+    {
+      title: "پنل کاربر",
+      path: "/profile",
+      icon: <GroupAddOutlined className="text-gray-500 ml-1" />,
+    },
+    {
+      title: "پنل ادمین",
+      path: "/admin",
+      icon: <PersonOutline className="text-gray-500 ml-1" />,
+    },
   ];
   return (
     <Drawer
