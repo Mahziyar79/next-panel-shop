@@ -6,10 +6,10 @@ import { useMutation } from "@tanstack/react-query";
 import { checkOtp, getOtp } from "../../../services/authServices";
 import CheckOTPForm from "./CheckOTPForm";
 import { useRouter } from "next/navigation";
+import StepperComponent from "@/components/StepperComponent";
 const RESEND_TIME = 90;
 
 function AuthPage() {
-
   const [phoneNumber, setPhoneNumber] = useState("09385818976");
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState(1);
@@ -56,7 +56,6 @@ function AuthPage() {
       } else {
         router.push("/complete-profile");
       }
-
     } catch (error) {
       toast.error(error?.response?.data?.message);
     }
@@ -99,10 +98,15 @@ function AuthPage() {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="w-full sm:max-w-sm">{renderSteps()}</div>
+    <div className="flex justify-center flex-col items-center px-4 md:px-0">
+      <div className="w-full sm:max-w-sm">
+        <StepperComponent />
+      </div>
+      <div className="w-full sm:max-w-sm bg-white p-4 mt-4">
+        {renderSteps()}
+      </div>
     </div>
-  )
+  );
 }
 
-export default AuthPage
+export default AuthPage;

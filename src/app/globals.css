@@ -74,11 +74,15 @@
     background-size: cover;
   }
 }
-.MuiTooltip-tooltip {
+.MuiTooltip-tooltip,
+.MuiStepLabel-label {
   font-family: inherit;
 }
 .MuiAccordion-root::before {
   display: none;
+}
+.MuiStepper-root {
+  flex-direction: row-reverse;
 }
 
 html,
@@ -88,5 +92,5 @@ body {
   font-family: var(--vazir-font);
   min-height: 100vh;
   user-select: none;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
