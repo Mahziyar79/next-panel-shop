@@ -1,15 +1,32 @@
 import Drawer from "@mui/material/Drawer";
 import Image from "next/image";
 import logo from "../assets/images/logo.svg";
-import { Close, GroupAddOutlined } from "@mui/icons-material";
+import {
+  Close,
+  GroupAddOutlined,
+  HomeOutlined,
+  ShoppingBagOutlined,
+} from "@mui/icons-material";
 import Link from "next/link";
 import LoginIcon from "@mui/icons-material/Login";
 import { useGetUser } from "@/hooks/useAuth";
 import Button from "@mui/material/Button";
+import { usePathname } from "next/navigation";
 
 const MobileMenu = ({ open, close }) => {
   const { data } = useGetUser();
   const { user } = data || {};
+  const pathName = usePathname();
+  const navLinks = [
+    {
+      title: "خانه",
+      path: "/",
+      icon: <HomeOutlined className="text-gray-500 ml-1" />,
+    },
+    { title: "محصولات", path: "/products",icon: <ShoppingBagOutlined className="text-gray-500 ml-1" />, },
+    { title: "پنل کاربر", path: "/profile",icon: <GroupAddOutlined className="text-gray-500 ml-1" />, },
+    { title: "پنل ادمین", path: "/admin",icon: <HomeOutlined className="text-gray-500 ml-1" />, },
+  ];
   return (
     <Drawer
       anchor="right"
@@ -26,12 +43,22 @@ const MobileMenu = ({ open, close }) => {
         </div>
         <div>
           <ul>
-            <li>
-              <Link className="block py-2" href="/profile">
-                <GroupAddOutlined className="text-gray-400 ml-1" />
-                پنل کاربر
-              </Link>
-            </li>
+            {navLinks.map((link) => {
+              return (
+                <li>
+                  <Link
+                    className={`text-xl block py-3 ${
+                      pathName === link.path && "text-blue-600"
+                    }`}
+                    href={`${link.path}`}
+                    onClick={() => close()}
+                  >
+                    {link.icon}
+                    {link.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div>
