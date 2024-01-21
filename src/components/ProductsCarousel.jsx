@@ -60,7 +60,7 @@ const ProductsCarousel = ({ products }) => {
                         boxShadow: "none",
                       }}
                     >
-                      {product.likesCount}
+                      {toPersianNumbers(product.likesCount)}
                     </Button>
 
                     <Button
@@ -77,7 +77,7 @@ const ProductsCarousel = ({ products }) => {
                         boxShadow: "none",
                       }}
                     >
-                      {product.countInStock}
+                      {toPersianNumbers(product.countInStock)}
                     </Button>
                   </div>
                 </div>
@@ -90,11 +90,11 @@ const ProductsCarousel = ({ products }) => {
                   {product?.title}
                 </Link>
                 <div className="mb-4">
-                    <span>تاریخ انتشار: </span>
-                    <span className="font-bold">
-                      {toLocalDateStringShort(product.createdAt)}
-                    </span>
-                  </div>
+                  <span>تاریخ انتشار: </span>
+                  <span className="font-bold">
+                    {toLocalDateStringShort(product.createdAt)}
+                  </span>
+                </div>
                 <div className="text-blue-500 cursor-pointer hover:text-blue-900 transition-all duration-300">
                   <Link
                     href={`/products/${product.slug}`}
