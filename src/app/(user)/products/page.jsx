@@ -1,3 +1,5 @@
+import productImage from "../../../assets/images/product-image.svg";
+
 import { getCategories } from "@/services/categoryService";
 import { getProducts } from "@/services/productService";
 import CategorySidebar from "./CategorySidebar";
@@ -8,6 +10,7 @@ import AddToCart from "./[slug]/AddToCart";
 import LikeProduct from "./LikeProduct";
 import { cookies } from "next/headers";
 import { toStringCookies } from "@/utils/toStringCookies";
+import Image from "next/image";
 
 export const dynamic = "force-dynamic"; // eq to {cache :"no-store"} or SSR in pages Dir. :)
 
@@ -21,27 +24,39 @@ async function Products({ searchParams }) {
     strCookies
   );
   const categoryPromise = getCategories();
-  
+
   const [{ products }, { categories }] = await Promise.all([
     productsPromise,
     categoryPromise,
   ]);
   return (
     <div>
-      <h1 className="text-xl font-bold mb-6">صفحه محصولات</h1>
+      <h1 className="text-xl font-black mb-6">دوره های آموزش برنامه نویسی</h1>
       <div className="grid grid-cols-4">
         <CategorySidebar categories={categories} />
-        <div className="col-span-3">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="col-span-4 md:col-span-3 mt-3 px-2 md:px-0 md:mt-0">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {products.map((product) => {
               return (
                 <div
-                  className="col-span-1 border rounded-xl shadow-md p-4"
+                  className="col-span-2 border rounded-xl shadow-md p-4 relative"
                   key={product._id}
                 >
+                  <div className="absolute top-5 right-5 z-10 bg-white shadow-md p-1 rounded flex items-center">
+                    <LikeProduct product={product} />
+                  </div>
+
+                  <Link href={`/products/${product.slug}`}>
+                    <div className="aspect-w-13 aspect-h-9 mb-3">
+                      <Image
+                        className="object-cover object-center h-full w-full rounded-xl"
+                        src={productImage}
+                      />
+                    </div>
+                  </Link>
                   <h2 className="font-bold text-xl mb-4">{product.title}</h2>
                   <div className="mb-4">
-                    <span>تاریخ ساختن: </span>
+                    <span>تاریخ انتشار: </span>
                     <span className="font-bold">
                       {toLocalDateStringShort(product.createdAt)}
                     </span>
@@ -52,7 +67,6 @@ async function Products({ searchParams }) {
                   >
                     مشاهده محصول
                   </Link>
-                  <LikeProduct product={product} />
                   <AddToCart product={product} />
                 </div>
               );

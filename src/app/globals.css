@@ -77,6 +77,9 @@
 .MuiTooltip-tooltip {
   font-family: inherit;
 }
+.MuiAccordion-root::before {
+  display: none;
+}
 
 html,
 body {

@@ -11,10 +11,9 @@ import {
 } from "@mui/icons-material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { toLocalDateStringShort } from "@/utils/toLocalDate";
 
 const ProductsCarousel = ({ products }) => {
-  console.log(products);
-
   return (
     <Swiper
       slidesPerView={"3"}
@@ -89,6 +88,12 @@ const ProductsCarousel = ({ products }) => {
                 >
                   {product?.title}
                 </Link>
+                <div className="mb-4">
+                    <span>تاریخ انتشار: </span>
+                    <span className="font-bold">
+                      {toLocalDateStringShort(product.createdAt)}
+                    </span>
+                  </div>
                 <div className="text-blue-500 cursor-pointer hover:text-blue-900 transition-all duration-300">
                   <Link
                     href={`/products/${product.slug}`}

@@ -15,11 +15,14 @@ import {
   ShoppingBagOutlined,
   ShoppingCartOutlined,
 } from "@mui/icons-material";
+import { useState } from "react";
+import MobileMenu from "@/components/MobileMenu";
 
 function Header() {
-  const { data, error, isLoading } = useGetUser();
-
+  const { data, isLoading } = useGetUser();
   const { user, cart } = data || {};
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   return (
     <>
@@ -35,7 +38,10 @@ function Header() {
       >
         <div className="container xl:max-w-screen-xl flex items-center gap-5 py-2 justify-between px-2 md:px-0">
           <div className="gap-5 text-gray-500 items-center md:hidden flex">
-            <MenuOutlined />
+            <MenuOutlined
+              className="cursor-pointer"
+              onClick={() => setIsMenuOpen(true)}
+            />
             <Link href="/">
               <Image src={mobileIcon} />
             </Link>
@@ -127,6 +133,7 @@ function Header() {
           </nav>
         </div>
       </header>
+      <MobileMenu open={isMenuOpen} close={() => setIsMenuOpen(false)} />
     </>
   );
 }

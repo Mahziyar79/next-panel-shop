@@ -37,9 +37,7 @@ function ProductsFilter({ categories }) {
     }
   };
   return (
-    <div className="mb-8">
-      <p className="font-bold mb-4">دسته بندی ها</p>
-      <ul className=" space-y-4">
+      <ul className=" space-y-3">
         {categories.map((category) => {
           return (
             <CheckBox
@@ -54,7 +52,6 @@ function ProductsFilter({ categories }) {
           );
         })}
       </ul>
-    </div>
   );
 }
 export default ProductsFilter;
