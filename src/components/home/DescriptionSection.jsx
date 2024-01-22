@@ -8,7 +8,7 @@ import TooltipComponent from "../TooltipComponent";
 
 export default function DescriptionSection() {
   return (
-    <section className="my-16 sm:my-28 grid grid-cols-10 gap-4 md:gap-8 container md:max-w-screen-xl">
+    <section className="my-16 sm:my-28 grid grid-cols-10 gap-4 md:gap-8 container md:max-w-screen-xl px-5 md:px-0">
       <TooltipComponent
         tooltipTitle="با کار روی پروژه های واقعی، بازار رو از نزدیک لمس کنید"
         title="کاربردی و پروژه محور"

@@ -10,7 +10,7 @@ import StepperComponent from "@/components/StepperComponent";
 const RESEND_TIME = 90;
 
 function AuthPage() {
-  const [phoneNumber, setPhoneNumber] = useState("09385818976");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState(1);
   const [time, setTime] = useState(RESEND_TIME);

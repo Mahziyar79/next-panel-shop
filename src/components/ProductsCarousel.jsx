@@ -98,7 +98,7 @@ const ProductsCarousel = ({ products }) => {
                 <div className="text-blue-500 cursor-pointer hover:text-blue-900 transition-all duration-300">
                   <Link
                     href={`/products/${product.slug}`}
-                    class="flex items-center gap-x-2 text-sm font-bold"
+                    className="flex items-center gap-x-2 text-sm font-bold"
                   >
                     مشاهده محصول
                     <KeyboardBackspaceOutlined />
@@ -124,17 +124,17 @@ const ProductsCarousel = ({ products }) => {
                   <div className="flex flex-col justify-between ">
                     {product?.price === product?.offPrice ? (
                       <div className="font-bold flex items-center">
-                        <span class="text-secondary-800 font-black ml-2 md:text-xl">
+                        <span className="text-secondary-800 font-black ml-2 md:text-xl">
                           {toPersianNumbers(product.price)}
                         </span>
                         <Image src={toman} alt="toman" width={22} />
                       </div>
                     ) : (
                       <div className="font-bold flex flex-col items-center">
-                        <div class="text-secondary-300 text-sm line-through">
+                        <div clclassNameass="text-secondary-300 text-sm line-through">
                           {toPersianNumbers(product?.offPrice)}
                         </div>
-                        <span class="text-secondary-800 font-black ml-2 md:text-xl">
+                        <span className="text-secondary-800 font-black ml-2 md:text-xl">
                           {toPersianNumbers(product.price)}
                         </span>
                         <Image src={toman} alt="toman" width={22} />

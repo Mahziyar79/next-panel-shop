@@ -15,12 +15,12 @@ import Image from "next/image";
 const FrontRoad = () => {
   return (
     <div className="container mx-auto md:max-w-screen-lg mb-28">
-      <div class="flex justify-center flex-col text-secondary-900 items-center">
-        <h2 class="md:text-3xl text-xl font-black mb-1 md:mb-2">
+      <div className="flex justify-center flex-col text-secondary-900 items-center">
+        <h2 className="md:text-3xl text-xl font-black mb-1 md:mb-2">
           مسیر یادگیری فرانت اند
         </h2>
         <Link
-          class="text-sm lg:text-base text-secondary-700 transition-all duration-200 hover:text-primary-900 font-bold"
+          className="text-sm lg:text-base text-secondary-700 transition-all duration-200 hover:text-primary-900 font-bold"
           href="/learning-path"
         >
           نقشه راه و مسیر یادگیری فرانت اند
@@ -35,7 +35,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             HTML CSS
           </span>
           <Image
@@ -52,7 +52,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             جاوااسکریپت
           </span>
           <Image
@@ -69,7 +69,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             گیت
           </span>
           <Image
@@ -86,7 +86,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             ریکت
           </span>
           <Image
@@ -103,7 +103,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             تیلویند
           </span>
           <Image
@@ -120,7 +120,7 @@ const FrontRoad = () => {
               className="h-9 w-9 md:w-10 md:h-10 z-10"
             />
           </div>
-          <span class="font-extrabold text-sm md:text-base text-[#555775]">
+          <span className="font-extrabold text-sm md:text-base text-[#555775]">
             نکست
           </span>
         </div>

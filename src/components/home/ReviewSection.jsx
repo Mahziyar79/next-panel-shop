@@ -23,11 +23,11 @@ const ReviewSection = () => {
                     className="h-9 w-9 z-10 md:shadow-warranty-icon"
                   />
                 </div>
-                <h2 class="font-black text-secondary-900 text-xl lg:text-4xl">
+                <h2 className="font-black text-secondary-900 text-xl lg:text-4xl">
                   نظرات دانشجویان
                 </h2>
               </div>
-              <p class="text-xs opacity-80 text-secondary-900 mr-5 lg:mr-8 lg:text-base leading-6 lg:leading-8">
+              <p className="text-xs opacity-80 text-secondary-900 mr-5 lg:mr-8 lg:text-base leading-6 lg:leading-8">
                 اینا فقط بخش کوچکی از تجربه دانشجویان فرانت هوکس هست
               </p>
             </div>

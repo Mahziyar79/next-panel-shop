@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="grid gap-10 md:gap-14 grid-cols-5 grid-row-2 container md:max-w-screen-xl mx-auto">
         <div className="col-span-5 md:col-span-2 flex flex-col justify-start">
           <div>
-            <h2 class="text-primary font-bold text-sm mb-4">
+            <h2 className="text-primary font-bold text-sm mb-4">
               آکادمی آنلاین فرانت هوکس، دوره های کوچ محور
               <strong>برنامه نویسی وب</strong>
             </h2>
-            <div class="sm:leading-7 text-sm leading-5">
+            <div className="sm:leading-7 text-sm leading-5">
               <p className="leading-5 md:leading-7">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-5 md:col-span-1">
-          <h3 class="text-xl mb-4 text-secondary-700 ">بخش های سایت</h3>
+          <h3 className="text-xl mb-4 text-secondary-700 ">بخش های سایت</h3>
           <nav>
             <ul className="text-sm">
               <li className="list-disc py-2 list-inside">دوره های آموزشی</li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </nav>
         </div>
         <div className="col-span-5 md:col-span-1">
-          <h3 class="text-xl mb-4 text-secondary-700 ">دوره های آموزشی</h3>
+          <h3 className="text-xl mb-4 text-secondary-700 ">دوره های آموزشی</h3>
           <nav>
             <ul className="text-sm">
               <li className="list-disc py-2 list-inside">دوره های آموزشی</li>

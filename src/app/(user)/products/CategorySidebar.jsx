@@ -8,7 +8,7 @@ import { CategoryOutlined, FilterAltOutlined } from "@mui/icons-material";
 
 function CategorySidebar({ categories }) {
   return (
-    <div className="col-span-4 md:col-span-1 flex gap-y-2 flex-row justify-between md:justify-start md:flex-col md:ml-6">
+    <div className="col-span-4 md:col-span-1 flex gap-y-2 flex-col md:ml-6">
       <Accordion className="shadow-none">
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <div className="flex items-center gap-1">
