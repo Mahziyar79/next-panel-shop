@@ -11,6 +11,7 @@ export default function HeroSection() {
       <Image
         src={heroBgSVG}
         className="absolute left-0 top-0 hidden md:block"
+        priority
       />
       <section className="container md:max-w-screen-lg mx-auto mt-12 z-10">
         <div className="flex gap-y-9 flex-col-reverse items-center md:flex-row md:gap-x-5 md:items-center md:justify-between">
