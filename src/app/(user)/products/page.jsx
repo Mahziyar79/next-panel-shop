@@ -1,4 +1,4 @@
-import productImage from "../../../assets/images/product-image.svg";
+import productImage from "@/public/assets/images/product-image.svg";
 
 import { getCategories } from "@/services/categoryService";
 import { getProducts } from "@/services/productService";

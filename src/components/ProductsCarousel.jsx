@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import productImage from "../assets/images/product-image.svg";
-import toman from "../assets/images/toman.svg";
+import productImage from "@/public/assets/images/product-image.svg";
+import toman from "@/public/assets/images/toman.svg";
 import Link from "next/link";
 import Button from "@mui/material/Button";
 import {

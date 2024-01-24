@@ -1,5 +1,5 @@
 import Image from "next/image";
-import codeSVG from "../assets/images/code.svg";
+import codeSVG from "@/public/assets/images/code.svg";
 import Link from "next/link";
 import Button from "@mui/material/Button";
 import { getProducts } from "@/services/productService";

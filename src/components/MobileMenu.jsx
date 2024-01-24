@@ -1,6 +1,6 @@
 import Drawer from "@mui/material/Drawer";
 import Image from "next/image";
-import logo from "../assets/images/logo.svg";
+import logo from "@/public/assets/images/logo.svg";
 import {
   Close,
   GroupAddOutlined,

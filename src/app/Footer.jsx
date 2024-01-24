@@ -1,5 +1,5 @@
 import Image from "next/image";
-import zarin from "../assets/images/zarin.png";
+import zarin from "@/public/assets/images/zarin.png";
 
 const Footer = () => {
   return (

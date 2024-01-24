@@ -1,7 +1,7 @@
 import Image from "next/image";
-import heroBgSVG from "../../assets/images/hero-bg.svg";
-import banner from "../../assets/images/banner.webp";
-import downSVG from "../../assets/images/down.svg";
+import heroBgSVG from "@/public/assets/images/hero-bg.svg";
+import banner from "@/public/assets/images/banner.webp";
+import downSVG from "@/public/assets/images/down.svg";
 import { Button, Chip } from "@mui/material";
 import Link from "next/link";
 

@@ -1,15 +1,15 @@
 import Link from "next/link";
-import htmlcss from "../../assets/images/frontRoad/html-css.svg";
-import js from "../../assets/images/frontRoad/js.svg";
-import git from "../../assets/images/frontRoad/git.svg";
-import next from "../../assets/images/frontRoad/next.svg";
-import tailwind from "../../assets/images/frontRoad/tailwind.svg";
-import react from "../../assets/images/frontRoad/react.svg";
-import step1 from "../../assets/images/frontRoad/step1.svg";
-import step2 from "../../assets/images/frontRoad/step2.svg";
-import step3 from "../../assets/images/frontRoad/step3.svg";
-import step4 from "../../assets/images/frontRoad/step4.svg";
-import step5 from "../../assets/images/frontRoad/step5.svg";
+import htmlcss from "@/public/assets/images/frontRoad/html-css.svg";
+import js from "@/public/assets/images/frontRoad/js.svg";
+import git from "@/public/assets/images/frontRoad/git.svg";
+import next from "@/public/assets/images/frontRoad/next.svg";
+import tailwind from "@/public/assets/images/frontRoad/tailwind.svg";
+import react from "@/public/assets/images/frontRoad/react.svg";
+import step1 from "@/public/assets/images/frontRoad/step1.svg";
+import step2 from "@/public/assets/images/frontRoad/step2.svg";
+import step3 from "@/public/assets/images/frontRoad/step3.svg";
+import step4 from "@/public/assets/images/frontRoad/step4.svg";
+import step5 from "@/public/assets/images/frontRoad/step5.svg";
 import Image from "next/image";
 
 const FrontRoad = () => {

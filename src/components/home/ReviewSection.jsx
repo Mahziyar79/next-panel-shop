@@ -1,6 +1,6 @@
 import Image from "next/image";
-import descriptionBg from "../../assets/images/descriptionSection/description-bg.svg";
-import reviewBg from "../../assets/images/review.svg";
+import descriptionBg from "@/public/assets/images/descriptionSection/description-bg.svg";
+import reviewBg from "@/public/assets/images/review.svg";
 import LatestReviewsSlider from "./LatestReviewsSlider";
 
 const ReviewSection = () => {

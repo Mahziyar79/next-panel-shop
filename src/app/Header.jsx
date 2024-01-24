@@ -3,8 +3,8 @@
 import { useGetUser } from "@/hooks/useAuth";
 import Image from "next/image";
 import Link from "next/link";
-import logoIcon from "../assets/images/logo.svg";
-import mobileIcon from "../assets/images/mobile-logo.svg";
+import logoIcon from "@/public/assets/images/logo.svg";
+import mobileIcon from "@/public/assets/images/mobile-logo.svg";
 import LoginIcon from "@mui/icons-material/Login";
 import { Badge, Button } from "@mui/material";
 import {

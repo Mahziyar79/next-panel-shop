@@ -4,10 +4,10 @@ import {
   toPersianNumbers,
   toPersianNumbersWithComma,
 } from "@/utils/toPersianNumbers";
-import bg from "../../../../assets/images/singleProduct/product-bg.svg";
-import time from "../../../../assets/images/singleProduct/time.svg";
-import chart from "../../../../assets/images/singleProduct/chart.svg";
-import users from "../../../../assets/images/singleProduct/users.svg";
+import bg from "@/public/assets/images/singleProduct/product-bg.svg";
+import time from "@/public/assets/images/singleProduct/time.svg";
+import chart from "@/public/assets/images/singleProduct/chart.svg";
+import users from "@/public/assets/images/singleProduct/users.svg";
 import Image from "next/image";
 import { FavoriteBorderOutlined } from "@mui/icons-material";
 import Button from "@mui/material/Button";
