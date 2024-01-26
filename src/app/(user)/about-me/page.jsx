@@ -18,20 +18,20 @@ const AboutMe = () => {
       <div className="flex flex-wrap w-full gap-8">
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 rounded-full text-white relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-40">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1402)} - تاکنون
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               برنامه نویس فرانت اند
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
+            <h3 className="text-[14px] text-gray-500 mb-3">
               هلدینگ تجازت الکترونیک اول
             </h3>
             <div className="flex flex-col gap-y-2">
@@ -43,20 +43,20 @@ const AboutMe = () => {
         </div>
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 text-white rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-52 md:before:h-40">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1399)} - تاکنون
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               وب دولوپر
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
+            <h3 className="text-[14px] text-gray-500 mb-3">
               CMC Marketing Agency (Canada)
             </h3>
             <div className="flex flex-col gap-y-2">
@@ -69,20 +69,20 @@ const AboutMe = () => {
         </div>
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 rounded-full text-white relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-60 md:before:h-44">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1401)} - {toPersianNumbers(1402)}
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               وب دولوپر
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
+            <h3 className="text-[14px] text-gray-500 mb-3">
               آژانس تبلیغاتی لیموشیرین
             </h3>
             <div className="flex flex-col gap-y-2">
@@ -95,20 +95,20 @@ const AboutMe = () => {
         </div>
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 rounded-full text-white relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-44">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1400)} - {toPersianNumbers(1400)}
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               برنامه نویس فرانت اند
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
+            <h3 className="text-[14px] text-gray-500 mb-3">
               رتیناتک | RetinaTech
             </h3>
             <div className="flex flex-col gap-y-2">
@@ -120,22 +120,20 @@ const AboutMe = () => {
         </div>
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 rounded-full text-white relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-44 md:before:h-32">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1400)} - {toPersianNumbers(1400)}
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               برنامه نویس فرانت اند
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
-              SarvFinance
-            </h3>
+            <h3 className="text-[14px] text-gray-500 mb-3">SarvFinance</h3>
             <div className="flex flex-col gap-y-2">
               <CheckSection title="تکنولوژی های مورد استفاده : Reactjs , Tailwindcss , Websocket , binance" />
               <CheckSection title="توسعه و طراحی پنل ادمین شرکت و اتصال پنل به ربات تریدر شرکت" />
@@ -145,21 +143,21 @@ const AboutMe = () => {
         </div>
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">
           <div>
-            <div className="dark:bg-mainyellow bg-mainGreen p-2 rounded-full relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-mainGreen before:rounded-lg dark:before:bg-mainyellow before:w-[2px] before:h-24">
-              <HomeRepairServiceOutlined color="action" />
+            <div className=" bg-[#4A6DFF] p-2 rounded-full text-white relative before:content-[''] before:absolute before:top-[100%] before:left-[50%] before:bg-[#4A6DFF] before:rounded-lg before:w-[2px] before:h-36 md:before:h-32">
+              <HomeRepairServiceOutlined color="inherit" />
             </div>
           </div>
           <div className="flex flex-col ">
             <span>
-              <span className="bg-[#eee] dark:bg-[#363636] dark:text-gray-300 text-gray-500 rounded-full text-sm px-3 py-1">
+              <span className="bg-[#eee]  text-gray-500 rounded-full text-sm px-3 py-1">
                 {toPersianNumbers(1399)} - {toPersianNumbers(1398)}
               </span>
             </span>
-            <h3 className="text-[23px] font-bold dark:text-white mt-3 mb-1 text-[#313131]">
+            <h3 className="text-[23px] font-bold mt-3 mb-1 text-[#313131]">
               طراح سایت
             </h3>
-            <h3 className="text-[14px] text-gray-500 dark:text-gray-300 mb-3">
-              آژانس تبلیغاتی مارکتگرام
+            <h3 className="text-[14px] text-gray-500 mb-3">
+              آژانس تبلیغاتی مارکت گرام
             </h3>
             <div className="flex flex-col gap-y-2">
               <CheckSection title="تکنولوژی های مورد استفاده : wordpress , html , css , javascript" />

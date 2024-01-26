@@ -102,7 +102,7 @@ function AuthPage() {
       <div className="w-full sm:max-w-sm">
         <StepperComponent />
       </div>
-      <div className="w-full sm:max-w-sm bg-white p-4 mt-4">
+      <div className="w-full sm:max-w-sm bg-white p-4 mt-10 rounded-lg">
         {renderSteps()}
       </div>
     </div>
