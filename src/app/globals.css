@@ -81,9 +81,9 @@
 .MuiAccordion-root::before {
   display: none;
 }
-.MuiStepper-root {
+/* .MuiStepper-root {
   flex-direction: row-reverse;
-}
+} */
 
 html,
 body {

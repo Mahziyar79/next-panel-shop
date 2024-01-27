@@ -21,6 +21,7 @@ const LatestProducts = async () => {
                 <Image
                   className="absolute w-full h-full opacity-[7%]"
                   src={codeSVG}
+                  alt="codeSVG"
                 />
               </div>
               <p className="text-sm mb-5">

@@ -39,12 +39,12 @@ function Header() {
         <div className="container xl:max-w-screen-xl flex items-center gap-5 py-2 justify-between px-2 md:px-0">
           <div className="gap-5 text-gray-500 items-center md:hidden flex">
             <MenuOutlined
-            fontSize="large"
+              fontSize="large"
               className="cursor-pointer"
               onClick={() => setIsMenuOpen(true)}
             />
             <Link href="/">
-              <Image src={mobileIcon} />
+              <Image src={mobileIcon} alt="mobile icon" />
             </Link>
           </div>
           <div className="justify-between gap-5 hidden md:flex">

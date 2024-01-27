@@ -51,6 +51,7 @@ async function Products({ searchParams }) {
                       <Image
                         className="object-cover object-center h-full w-full rounded-xl"
                         src={productImage}
+                        alt="product image"
                       />
                     </div>
                   </Link>

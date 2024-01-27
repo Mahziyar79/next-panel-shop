@@ -1,11 +1,13 @@
-import HeroSection from "@/components/home/HeroSection";
-import DescriptionSection from "@/components/home/DescriptionSection";
-import LatestProducts from "@/components/LatestProducts";
-import ReviewSection from "@/components/home/ReviewSection";
-import FrontRoad from "@/components/home/FrontRoad";
-import WelcomeModal from "@/components/home/WelcomeModal";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "./error";
+import dynamic from "next/dynamic";
+
+const HeroSection = dynamic(() => import("@/components/home/HeroSection"));
+const DescriptionSection = dynamic(() => import("@/components/home/DescriptionSection"));
+const ReviewSection = dynamic(() => import("@/components/home/ReviewSection"));
+const FrontRoad = dynamic(() => import("@/components/home/FrontRoad"));
+const WelcomeModal = dynamic(() => import("@/components/home/WelcomeModal"));
+const LatestProducts = dynamic(() => import("@/components/LatestProducts"));
 
 export default function Home() {
   return (

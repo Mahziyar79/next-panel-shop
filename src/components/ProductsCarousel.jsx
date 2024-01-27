@@ -42,6 +42,7 @@ const ProductsCarousel = ({ products }) => {
                       <Image
                         className="object-cover object-center h-full w-full rounded-xl"
                         src={productImage}
+                        alt="Product Image"
                       />
                     </div>
                   </Link>
@@ -131,7 +132,7 @@ const ProductsCarousel = ({ products }) => {
                       </div>
                     ) : (
                       <div className="font-bold flex flex-col items-center">
-                        <div clclassNameass="text-secondary-300 text-sm line-through">
+                        <div className="text-secondary-300 text-sm line-through">
                           {toPersianNumbers(product?.offPrice)}
                         </div>
                         <span className="text-secondary-800 font-black ml-2 md:text-xl">

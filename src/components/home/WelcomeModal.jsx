@@ -62,7 +62,7 @@ const WelcomeModal = () => {
             <div className="flex gap-x-1 items-center w-full md:w-[47%] shadow-lg p-2">
               <CheckCircle color="success" fontSize="small" />
               <span className="text-sm">
-                قابلیت افزودن دسته بندی ، محصول ، کد تخقیف و...
+                قابلیت افزودن دسته بندی ، محصول ، کد تخفیف و...
               </span>
             </div>
           </div>

@@ -57,7 +57,7 @@ const MobileMenu = ({ open, close }) => {
     >
       <div className="p-2 flex flex-col justify-between just h-full">
         <div className="flex justify-between items-center border-b-2 pb-2">
-          <Image src={logo} />
+          <Image src={logo} alt="Logo" />
           <Close className="cursor-pointer" onClick={() => close()} />
         </div>
         <div>

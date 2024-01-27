@@ -11,7 +11,7 @@ export default function HeroSection() {
       <Image
         src={heroBgSVG}
         className="absolute left-0 top-0 hidden md:block"
-        priority
+        alt="hero bg SVG"
       />
       <section className="container md:max-w-screen-lg mx-auto mt-12 z-10">
         <div className="flex gap-y-9 flex-col-reverse items-center md:flex-row md:gap-x-5 md:items-center md:justify-between">
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="w-[80%] md:w-[45%] max-w-screen-sm relative">
-            <Image src={banner} alt="Banner" width={"100vh"} />
+            <Image src={banner} priority alt="Banner" width={"100vh"} />
             <div
               className="absolute -bottom-0 w-full h-48 z-2"
               style={{
