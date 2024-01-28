@@ -9,7 +9,7 @@ const steps = ["احراز هویت", "تکمیل اطلاعات", "ثبت سف�
 export default function StepperComponent() {
   return (
     <Box sx={{ width: "100%", fontFamily: "inherit" }}>
-      <Stepper activeStep={0} alternativeLabel>
+      <Stepper activeStep={0} alternativeLabel dir="ltr">
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>

@@ -3,6 +3,7 @@ import "../../globals.css";
 import Providers from "@/pages/Providers";
 import { Toaster } from "react-hot-toast";
 import AdminSideBar from "./AdminSideBar";
+import Header from "./Header";
 
 export const metadata = {
   title: "پروفایل ادمین",
@@ -22,7 +23,12 @@ export default function RootLayout({ children }) {
             <div className="col-span-1 bg-gray-100 overflow-y-auto p-4">
               <AdminSideBar />
             </div>
-            <div className="col-span-4 overflow-y-auto p-4">{children}</div>
+            <div className="col-span-4 overflow-y-auto px-4">
+              <div className="flex flex-col">
+              <Header />
+              {children}
+              </div>
+            </div>
           </div>
         </Providers>
       </body>

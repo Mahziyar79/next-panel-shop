@@ -59,7 +59,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="w-[80%] md:w-[45%] max-w-screen-sm relative">
-            <Image src={banner} priority alt="Banner" width={"100vh"} />
+            <Image src={banner} loading="eager" alt="Banner" width={"100vh"} />
             <div
               className="absolute -bottom-0 w-full h-48 z-2"
               style={{
