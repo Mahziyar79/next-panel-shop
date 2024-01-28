@@ -1,11 +1,9 @@
 "use client";
 import Button from "@mui/material/Button";
 
-// Error components must be Client Components
-
 export default function Error({ reset }) {
   return (
-    <div className="flex flex-col items-center gap-y-7">
+    <div className="flex flex-col items-center gap-y-7 md:mb-32">
       <h2 className="font-black text-2xl">مشکلی به وجود آمد</h2>
       <Button
         variant="contained"
