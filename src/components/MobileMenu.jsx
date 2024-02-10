@@ -62,9 +62,9 @@ const MobileMenu = ({ open, close }) => {
         </div>
         <div>
           <ul>
-            {navLinks.map((link) => {
+            {navLinks.map((link,index) => {
               return (
-                <li>
+                <li key={index}>
                   <Link
                     className={`text-xl block py-3 ${
                       pathName === link.path && "text-blue-600"

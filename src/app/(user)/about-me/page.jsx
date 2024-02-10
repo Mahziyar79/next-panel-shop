@@ -1,6 +1,13 @@
 import CheckSection from "@/common/CheckSection";
 import { toPersianNumbers } from "@/utils/toPersianNumbers";
-import { HomeRepairServiceOutlined } from "@mui/icons-material";
+import {
+  HomeRepairServiceOutlined,
+  GitHub,
+  LinkedIn,
+} from "@mui/icons-material";
+import PhoneEnabledOutlinedIcon from '@mui/icons-material/PhoneEnabledOutlined';
+import MarkEmailReadOutlinedIcon from '@mui/icons-material/MarkEmailReadOutlined';
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -14,6 +21,24 @@ const AboutMe = () => {
         سال 1398 و همزمان با دانشگاه وارد بازار کار شدم و سعی کردم این مدت
         بهترین خودم باشم و رو به جلو پیش برم ، البته الان هم هدفم همین هست 😀
       </p>
+      <ul className="my-2 flex flex-col gap-y-2">
+        <li className="flex items-center gap-2">
+        <PhoneEnabledOutlinedIcon />
+          <Link href="tel:09385818976">شماره تماس : 09385818976</Link>
+        </li>
+        <li className="flex items-center gap-2">
+          <MarkEmailReadOutlinedIcon />
+          <Link href="mailto:mgillanpour79@gmail.com">ایمیل : mgillanpour79@gmail.com</Link>
+        </li>
+      </ul>
+      <div className="flex items-center gap-x-4">
+        <Link href={"https://www.linkedin.com/in/mahziyar-gilanpour"}>
+          <LinkedIn />
+        </Link>
+        <Link href={"https://github.com/Mahziyar79"}>
+          <GitHub />
+        </Link>
+      </div>
       <h2 className="text-2xl font-black my-6">تجربیات</h2>
       <div className="flex flex-wrap w-full gap-8">
         <div className="flex gap-x-3 w-full md:w-[47%] shadow-lg p-4 rounded-md">

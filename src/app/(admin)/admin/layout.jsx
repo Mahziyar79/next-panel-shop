@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
             </div>
             <div className="col-span-4 overflow-y-auto px-4">
               <div className="flex flex-col">
-              <Header />
-              {children}
+                <Header />
+                {children}
               </div>
             </div>
           </div>

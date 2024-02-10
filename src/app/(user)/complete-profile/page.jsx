@@ -1,7 +1,7 @@
 "use client";
 import TextField from "@/common/TextField";
 import { completeProfile } from "@/services/authServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
@@ -9,6 +9,7 @@ import { toast } from "react-hot-toast";
 function CompleteProfile() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const queryClient = useQueryClient();
   const { isLoading, mutateAsync } = useMutation({
     mutationFn: completeProfile,
   });
@@ -19,6 +20,7 @@ function CompleteProfile() {
       const { message } = await mutateAsync({ name, email });
       toast.success(message);
       router.push("/");
+      queryClient.invalidateQueries({ queryKey: ["get-user"] });
     } catch (error) {
       toast.error(error?.response?.data?.message);
     }

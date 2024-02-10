@@ -32,7 +32,7 @@ const ProductsCarousel = ({ products }) => {
       }}
     >
       {products?.map((product) => (
-        <SwiperSlide>
+        <SwiperSlide key={product._id}>
           <div className="mt-12 pb-10">
             <div className="bg-white shadow-sm shadow-secondary-100/40 rounded-xl relative p-3 flex flex-col h-full hover:shadow-lg hover:shadow-secondary-100/40 transition-all duration-300 ease-in-out">
               <div className="-mt-14 mb-6">

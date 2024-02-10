@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import SendOTPFrom from "./SendOTPForm";
 import { toast } from "react-hot-toast";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { checkOtp, getOtp } from "../../../services/authServices";
 import CheckOTPForm from "./CheckOTPForm";
 import { useRouter } from "next/navigation";
@@ -14,6 +14,7 @@ function AuthPage() {
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState(1);
   const [time, setTime] = useState(RESEND_TIME);
+  const queryClient = useQueryClient();
   const router = useRouter();
   const {
     data: otpResponse,
@@ -53,8 +54,10 @@ function AuthPage() {
       toast.success(message);
       if (user.isActive) {
         router.push("/");
+        queryClient.invalidateQueries({ queryKey: ["get-user"] });
       } else {
         router.push("/complete-profile");
+        queryClient.invalidateQueries({ queryKey: ["get-user"] });
       }
     } catch (error) {
       toast.error(error?.response?.data?.message);
