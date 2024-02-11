@@ -31,7 +31,7 @@ async function Products({ searchParams }) {
   ]);
   return (
     <div>
-      <h1 className="text-xl font-black mb-6">دوره های آموزش برنامه نویسی</h1>
+      <h1 className="text-xl font-black mb-6 mr-3 md:mr-0">دوره های آموزش برنامه نویسی</h1>
       <div className="grid grid-cols-4">
         <CategorySidebar categories={categories} />
         <div className="col-span-4 md:col-span-3 mt-3 px-2 md:px-0 md:mt-0">

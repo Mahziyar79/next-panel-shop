@@ -32,7 +32,7 @@ function Header() {
         </p>
       </div>
       <header
-        className={`backdrop-blur-2xl	w-full transiton-all ease-out z-20 mb-10 sticky top-0 transition-all duration-200  ${
+        className={`backdrop-blur-2xl	w-full transiton-all ease-out z-20 mb-5 md:mb-10 sticky top-0 transition-all duration-200  ${
           isLoading ? "blur-sm opacity-70" : "opacity-100 blur-0"
         }`}
       >

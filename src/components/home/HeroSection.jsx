@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="absolute left-0 top-0 hidden md:block"
         alt="hero bg SVG"
       />
-      <section className="container md:max-w-screen-lg mx-auto mt-12 z-10">
+      <section className="container md:max-w-screen-lg mx-auto md:mt-12 z-10">
         <div className="flex gap-y-9 flex-col-reverse items-center md:flex-row md:gap-x-5 md:items-center md:justify-between">
           <div className="text-center md:text-right">
             <div className="mb-4 md:mb-4 md:text-base text-xs">
@@ -26,7 +26,7 @@ export default function HeroSection() {
                 &nbsp;ظرفیت تکمیل شد 😍&nbsp;
               </span>
             </div>
-            <h1 className="font-black text-2xl sm:text-[30px] md:text-[40px] lg:text-[50px] leading-relaxed text-secondary-900 mb-2 md:mb-5">
+            <h1 className="font-black text-3xl sm:text-[30px] md:text-[40px] lg:text-[50px] leading-relaxed text-secondary-900 mb-2 md:mb-5">
               برنامه نویسی را سریع <br /> و آسان یاد بگیرید
             </h1>
             <p className="text-sm md:text-lg font-medium text-gray-400 mb-6 md:mb-2">
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="w-[80%] md:w-[45%] max-w-screen-sm relative">
-            <Image src={banner} loading="eager" alt="Banner" width={"100vh"} />
+            <Image className="hidden md:flex" src={banner} loading="eager" alt="Banner" width={"100vh"} />
             <div
               className="absolute -bottom-0 w-full h-48 z-2"
               style={{
