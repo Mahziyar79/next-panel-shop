@@ -54,10 +54,10 @@ function AuthPage() {
       toast.success(message);
       if (user.isActive) {
         router.push("/");
-        queryClient.invalidateQueries({ queryKey: ["get-user"] });
+        queryClient.invalidateQueries();
       } else {
         router.push("/complete-profile");
-        queryClient.invalidateQueries({ queryKey: ["get-user"] });
+        queryClient.invalidateQueries();
       }
     } catch (error) {
       toast.error(error?.response?.data?.message);
