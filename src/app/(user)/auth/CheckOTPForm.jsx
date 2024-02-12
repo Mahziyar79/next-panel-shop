@@ -46,7 +46,7 @@ function CheckOTPForm({
             border: "1px solid rgb(var(--color-primary-300))",
             borderRadius: "0.5rem",
           }}
-          containerStyle="flex flex-row-reverse gap-x-2 justify-center"
+          containerStyle="flex flex-row-reverse gap-x-1 md:gap-x-2 justify-center"
           renderInput={(props) => <input type="number" {...props} />}
         />
         <div>

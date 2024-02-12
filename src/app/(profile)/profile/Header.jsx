@@ -17,13 +17,13 @@ import MobileMenu from "@/components/MobileMenu";
 
 function Header() {
   const { data, isLoading } = useGetUser();
-  const { cart } = data || {};
+  const { cart, user } = data || {};
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
       <header
-        className={`backdrop-blur-2xl	w-full transiton-all ease-out z-20 mb-10 sticky top-0 transition-all duration-200  ${
+        className={`backdrop-blur-2xl	w-full transiton-all ease-out z-20 md:mb-10 sticky top-0 transition-all duration-200  ${
           isLoading ? "blur-sm opacity-70" : "opacity-100 blur-0"
         }`}
       >
@@ -57,12 +57,14 @@ function Header() {
           </div>
           <nav>
             <ul className="gap-y-2 md:gap-y-0 flex md:items-center justify-between gap-x-4 text-secondary-700 md:text-skin-base">
-              <li className="hidden md:flex">
-                <Link className="block py-2" href="/admin">
-                  <PersonOutline className="text-gray-400 ml-1" />
-                  پنل ادمین
-                </Link>
-              </li>
+              {user && user.role === "ADMIN" && (
+                <li className="hidden md:flex">
+                  <Link className="block py-2" href="/admin">
+                    <PersonOutline className="text-gray-400 ml-1" />
+                    پنل ادمین
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link className="block py-2" href="/cart">
                   <Button

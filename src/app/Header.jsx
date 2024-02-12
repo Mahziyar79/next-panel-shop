@@ -78,18 +78,23 @@ function Header() {
           </div>
           <nav>
             <ul className="gap-y-2 md:gap-y-0 flex md:items-center justify-between gap-x-4 text-secondary-700 md:text-skin-base">
-              <li className="hidden md:flex">
-                <Link className="block py-2" href="/profile">
-                  <GroupAddOutlined className="text-gray-400 ml-1" />
-                  پنل کاربر
-                </Link>
-              </li>
-              <li className="hidden md:flex">
-                <Link className="block py-2" href="/admin">
-                  <PersonOutline className="text-gray-400 ml-1" />
-                  پنل ادمین
-                </Link>
-              </li>
+              {user && user?.role === "USER" && (
+                <li className="hidden md:flex">
+                  <Link className="block py-2" href="/profile">
+                    <GroupAddOutlined className="text-gray-400 ml-1" />
+                    پنل کاربر
+                  </Link>
+                </li>
+              )}
+              {user && user?.role === "ADMIN" && (
+                <li className="hidden md:flex">
+                  <Link className="block py-2" href="/admin">
+                    <PersonOutline className="text-gray-400 ml-1" />
+                    پنل ادمین
+                  </Link>
+                </li>
+              )}
+
               <li>
                 <Link className="block py-2" href="/cart">
                   <Button
@@ -114,7 +119,7 @@ function Header() {
               </li>
 
               {user ? (
-                <span>{user.name}</span>
+                <span className="flex items-center">{user.name}</span>
               ) : (
                 <li>
                   <Link className="py-2 flex gap-2" href="/auth">

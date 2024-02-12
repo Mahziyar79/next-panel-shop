@@ -35,16 +35,6 @@ const MobileMenu = ({ open, close }) => {
       path: "/about-me",
       icon: <SentimentSatisfiedAltOutlined className="text-gray-500 ml-1" />,
     },
-    {
-      title: "پنل کاربر",
-      path: "/profile",
-      icon: <GroupAddOutlined className="text-gray-500 ml-1" />,
-    },
-    {
-      title: "پنل ادمین",
-      path: "/admin",
-      icon: <PersonOutline className="text-gray-500 ml-1" />,
-    },
   ];
   return (
     <Drawer
@@ -62,7 +52,7 @@ const MobileMenu = ({ open, close }) => {
         </div>
         <div>
           <ul>
-            {navLinks.map((link,index) => {
+            {navLinks.map((link, index) => {
               return (
                 <li key={index}>
                   <Link
@@ -78,12 +68,36 @@ const MobileMenu = ({ open, close }) => {
                 </li>
               );
             })}
+            {user && user?.role === "USER" && (
+              <li>
+                <Link
+                  className={`text-xl block py-3 ${
+                    pathName === "/profile" && "text-blue-600"
+                  }`}
+                  href="/profile"
+                >
+                  <GroupAddOutlined className="text-gray-400 ml-1" />
+                  پنل کاربر
+                </Link>
+              </li>
+            )}
+            {user && user?.role === "ADMIN" && (
+              <li>
+                <Link
+                  className={`text-xl block py-3 ${
+                    pathName === "/admin" && "text-blue-600"
+                  }`}
+                  href="/admin"
+                >
+                  <PersonOutline className="text-gray-400 ml-1" />
+                  پنل ادمین
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
         <div>
-          {user ? (
-            <span>{user.name}</span>
-          ) : (
+          {!user && (
             <Link className="py-2 flex gap-2" href="/auth">
               <Button
                 variant="contained"
