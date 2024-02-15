@@ -44,7 +44,6 @@ function page() {
     }
   };
 
-  console.log(coupon);
   useEffect(() => {
     if (coupon) {
       setType(coupon.type);

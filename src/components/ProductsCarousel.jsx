@@ -85,7 +85,7 @@ const ProductsCarousel = ({ products }) => {
               </div>
               <div>
                 <Link
-                  href={"/products/test"}
+                  href={`/products/${product.slug}`}
                   className="text-secondary-800 text-lg sm:text-lg block hover:text-blue-600 transition-all duration-500 ease-in-out mb-3 font-black"
                 >
                   {product?.title}

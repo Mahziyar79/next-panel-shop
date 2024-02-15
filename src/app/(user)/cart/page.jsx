@@ -14,7 +14,7 @@ function CartPage() {
 
   if (!user || !data)
     return (
-      <div className="container lg:max-w-screen-lg py-16">
+      <div className="container lg:max-w-screen-lg py-16 bg-white p-5 rounded-xl">
         <p className="font-bold mb-4">برای مشاهده سبد خرید لطفا لاگین کنید</p>
         <Link href="/auth" className="text-lg font-bold text-primary-900">
           رفتن به صفحه لاگین؟
@@ -24,7 +24,7 @@ function CartPage() {
 
   if (!user.cart?.products || user.cart?.products.length === 0)
     return (
-      <div>
+      <div className="bg-white p-5 rounded-xl">
         <p>سبد خرید خالیه!</p>
         <Link href="/products" className="text-lg font-bold text-primary-900">
           رفتن به صفحه محصولات

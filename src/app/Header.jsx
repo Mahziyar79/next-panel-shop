@@ -28,7 +28,7 @@ function Header() {
     <>
       <div className="bg-gradient-to-l from-rose-600 to-rose-400 p-2 z-20 relative">
         <p className="text-center text-sm text-white font-bold">
-          بوت کمپ جامع فرانت اند رو نمایی شد 😍
+          این سایت در حال توسعه میباشد 😍
         </p>
       </div>
       <header
